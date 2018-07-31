@@ -1,0 +1,139 @@
+.featuredHeader{
+    background:  #fffff0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.arrows{
+    margin-top: 140px;
+}
+.missionStatement{
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    border-top: solid black 4px;
+    padding-top:5px;
+}
+.localMat, .localTal{
+    font-family: 'IBM Plex Mono', monospace;
+}
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+img{
+    width:300px;
+    height:300px;
+}
+img:hover{
+    opacity:.5;
+    transition:.5s;
+}
+
+.productTitle{
+    text-align: center;
+    padding-top: 10px;
+    border-bottom: solid black 4px;
+}
+.featuredProducts{
+    padding:20px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.row{
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.productCard{
+    border: solid lightgrey 1px;
+    padding-top: 3px;
+    margin: 50px;
+    margin-bottom:25px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+#buyNowbtn{
+    width: 100px;
+    height: 35px;
+    margin-left:100px;
+    margin-bottom: 20px;
+    background:white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.itemBorder{
+    height: 550px;
+    width:3px;
+    background:lightgrey;
+    margin-top:25px;
+}
+.itemBottomBorder{
+    height:3px;
+    width: 1000px;
+    background:lightgrey;
+    margin-top:25px;
+    margin-left:200px;
+}
+/*.productCard:hover{
+    opacity:.5;
+}*/
+
+.footer{
+    height:350px;
+    padding:25px;
+    color:#F5F5F5;
+    background: #303030;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.logo{
+    text-align: center;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
+
+/*Nav Bar*/
+/*a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidenav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:linear-gradient(#ECE9E6, #FFFFFF);
+    overflow-x:hidden;
+    padding top: 60px;
+    transition:.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition:.3s;
+}
+
+.sidenav a:hover{
+    color:red;
+} 
+
+.sidenav .closebtn{
+    position: absolute;
+    top:0;
+    right:25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+    .sidenav{padding-top:15px;}
+    .sidnav a {font-size:18px;}
+}*/
