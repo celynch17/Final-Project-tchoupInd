@@ -1,6 +1,14 @@
-.featuredHeader{
+x.featuredHeader{
     background:  #fffff0;
     font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+}
+.featuredSlides{
+    margin-left:160px;
+    padding-top: 50px;
+}
+.featureSlides{
+    padding-top: 0px;
 }
 .arrows{
     margin-top: 140px;
@@ -8,8 +16,19 @@
 .missionStatement{
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
-    border-top: solid black 4px;
-    padding-top:5px;
+    border-top: solid black 3px;
+    padding-top:50px;
+    padding-bottom: 50px;
+    background: #fffff0;
+
+}
+
+.standOut{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #fffff0;
+    border-top: solid black 3px;
 }
 .localMat, .localTal{
     font-family: 'IBM Plex Mono', monospace;
@@ -29,11 +48,17 @@ img:hover{
 .productTitle{
     text-align: center;
     padding-top: 10px;
-    border-bottom: solid black 4px;
+    border-bottom: solid black 3px;
+    font-family: 'IBM Plex Mono', monospace;
+    background-size: cover;
+
 }
 .featuredProducts{
     padding:20px;
     font-family: 'IBM Plex Mono', monospace;
+    background: #fffff0;
+    padding-bottom:60px;
+
 }
 .row{
     padding-left:50px;
@@ -46,6 +71,7 @@ img:hover{
     margin: 50px;
     margin-bottom:25px;
     font-family: 'IBM Plex Mono', monospace;
+    background: #fffffc;
 }
 #buyNowbtn{
     width: 100px;
@@ -68,72 +94,164 @@ img:hover{
     margin-top:25px;
     margin-left:200px;
 }
-/*.productCard:hover{
-    opacity:.5;
-}*/
+
+#navSideBar{
+    width:300px;
+    background-color: #fffffc;
+    display:none;
+    height: 100%;
+    position:fixed;
+    top:0;
+    overflow-x: hidden;
+    transition: .5s;
+    z-index: 1;
+
+}
 
 .footer{
     height:350px;
-    padding:25px;
+    padding:15px;
     color:#F5F5F5;
     background: #303030;
     font-family: 'Source Code Pro', monospace;
 }
-
+#map{
+    height: 325px;
+    width:650px;
+}
 .logo{
     text-align: center;
-    margin-top:10px;
+    width: 1330px;
+    padding-right:20px;
+}
+.signUp{
+    width:350px;
+    padding-left: 50px;
+    float:right;
+}
+
+
+#productModal{
+    margin: 300px;
+    margin-top: 50px;
+    height:600px;
+    width: 900px;
+    display:none;
+    border: solid black 2px;
+    color:black;
+    font-family: 'Source Code Pro', monospace;
+    padding:auto;
+    background: #fffffc;
+}
+#description{
+    width: 400px;
+
+}
+.itemFeatures{
+    width:400px;
+    display: inline-block;
 }
 
 
 
+/*About Us*/
+.accordion {
+    background-color: #c6d9ec;
+    color:  #47476b;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    text-transform: .4s;
+    margin-bottom:15px;
+    margin-left: -15px
+}
+#ourName{
+    text-align: center;
+    display:none;
 
-
-
-
-
-
-/*Nav Bar*/
-/*a{
+}
+.panel {
+    padding: 10px;
+    background: #414345;
+    display: none;
+    overflow: hidden;
     text-decoration: none;
-    color: black;
+    margin-bottom:15px;
+    color:black;
 }
 
-.sidenav{
-    height:100%;
-    width:0;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    background-color:linear-gradient(#ECE9E6, #FFFFFF);
-    overflow-x:hidden;
-    padding top: 60px;
-    transition:.5s;
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+#ourMaterials{
+    text-align: center;
+}
+.footer-contact {
+    position: none;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #414345;
+    color:  #47476b;
+    text-align: left;
+    border-top: solid #c6d9ec;
+    text-align: center;
+}
+#emailContact{
+  position:absolute;
+  top: 100px;
+  left: 100px;
+  padding: 20px;
+  border: 1px solid #bbb;
+}
+.panel{
+        font-family: 'Source Code Pro', monospace;
+        background: #ffffe0;
+        color:black;
+        border: solid black 2px;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    transition:.3s;
+#materials, #environmental, #exploration, #accordion{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 24px;
+}
+.aboutTchoup{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fffff0
 }
 
-.sidenav a:hover{
-    color:red;
-} 
 
-.sidenav .closebtn{
-    position: absolute;
-    top:0;
-    right:25px;
-    font-size: 36px;
-    margin-left: 50px;
+/*Backpack Page*/
+
+.backpackCard{
+    border: solid lightgrey 1px;
+    padding-top: 3px;
+    margin: 50px;
+    margin-bottom:25px;
+    font-family: 'IBM Plex Mono', monospace;
+    background: #fffffc;
+}
+/*Accessory Page*/
+
+.accessoryCard{
+    border: solid lightgrey 1px;
+    padding-top: 3px;
+    margin: 50px;
+    margin-bottom:25px;
+    font-family: 'IBM Plex Mono', monospace;
+    background: #fffffc;
 }
 
-@media screen and (max-height: 450px){
-    .sidenav{padding-top:15px;}
-    .sidnav a {font-size:18px;}
-}*/
+.osbCard{
+    border: solid lightgrey 1px;
+    padding-top: 3px;
+    margin: 50px;
+    margin-bottom:25px;
+    font-family: 'IBM Plex Mono', monospace;
+    background: #fffffc;
+}

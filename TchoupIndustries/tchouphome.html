@@ -7,44 +7,64 @@
     crossorigin="anonymous"></script>
     <script src="tchoupScript.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbF9Wlif7kCsu0DPXMEcjQQF356jwwQpw&callback=myMap"async defer></script>
+  
    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<title>Tchoup Industries</title>
+	
+<div class="row" style="padding-left:20px; padding-right:0px; padding-bottom: 10px; padding-top:20px;    background: #fffff0; width:1450px; border-bottom: solid black 3px">
+	<div>
+	<span class="material-icons" id="menuBar" style="color:black; font-size: 60px; margin:0px">&#xe5d2;</span>
+</div>
 	<div class="logo">
-		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/tchoup-logo.png" alt="tchoup logo" style="width:230px; height:200px;">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/tchoup-logo.png" alt="tchoup logo" style="width:150px; height:120px;">
 	</div>
-	<!-- <div id="mySidenav" class="sidenav">
-		<a href = "javascript:void(0)"class="closebtn" onclick="closeNav()"> &times;</a>
-		<a href="tchouphome.html"> Home</a>
-		<a href="#">About Us </a>
-		<a href="#">Backpacks</a>						
-		<a href="#">Accessories</a>
-		<a href="#">Shoulder Bags</a>
-		<a href="#"> Contact </a>
-	</div>
-	<button onclick="openNav()"> Menu</button>
-	<br> -->
+</div>
 </head>
+
 <body>
-	<br>
+	<div id="navSideBar">
+		<span class="material-icons" id="hideMenu" style="color:black; font-size: 48px; margin:5px; float:middle"> &#xe5c4;</span>
+		<ul style=" list-style-type: none; font-size: 24px;">
+			<a href="thcouphome.html">Home</a>
+			<br>
+			<a href="aboutus.html"> About Us</a>
+			<br>
+			<a href="backpacks.html">Backpacks</a>
+			<br>
+			<a href="accessories.html"> Accessories</a>
+			<br>
+			<a href="shoulderbags.html">Over the Shoulder</a>
+			<br>
+			<a href="contact.html"> Contact</a>
+		</ul>
+	</div>
+	
+
 	<div class="featuredHeader">
 		<div class="featureSlides">
-			<div class="row">
+			<div class="row" style="margin-left:200px; padding-top:40px;">
 				<div class="arrows">
 					<h1>&#8610;</h1>
 				</div>
-			<div class="slide1">
-			<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/FlapPackRecycledSailcloth.jpg" style="margin: 10px;"><br>
+			<div class="col-sm-3 slide1">
+			<img class="img-fluid" src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/FlapPackRecycledSailcloth.jpg" style="margin: 10px;"><br>
 			<h6>Flap Pack Recycled Sail Cloth</h6>
 			</div>
-		<div class="featureSlides">
-			<div class="slide2"></div>
-			<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/ConvertibleMiniFlapPackSailCloth.jpg" style="margin: 10px;">
+		<div class="col-sm-3 featureSlides">
+		<div class="slide2"></div>
+			<img class="img-fluid" src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/ConvertibleMiniFlapPackSailCloth.jpg" style="margin: 10px;">
 			<h6>Convertible Mini Flap Pack Sail Cloth</h6>
 		</div>
-	<div class="arrows">
+		<div class="col-sm-3 featureSlides">
+			<div class="slide3"></div>
+			<img class="img-fluid" src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/FlapPackBlackWaxedCanvas.jpg" style="margin: 10px;">
+			<h6>Flap Pack Black Waxed Canvas</h6>
+		</div>
+
+		<div class="arrows" style="padding-left:35px">
 			<h1>&#8611;</h1>
 		</div>
 	</div>
@@ -53,7 +73,7 @@
 </div>
 <div class="col-sm-12 missionStatement">
 	<h3> Our Mission</h3>
-	<p>Tchoup Industries’ mission is to build bags that support our Southern Louisiana community, that have a reduced impact on our natural environment, and that instill a spirit of exploration.</p>
+	<p style="text-align:center">Tchoup Industries’ mission is to build bags that support our Southern Louisiana community, that have a reduced impact on our natural environment, and that instill a spirit of exploration.</p>
 	<br>
 </div>
 	
@@ -62,10 +82,64 @@
 		<h3> Featured Products</h3>
 	</div>
 	<div class="row">
-		<div class="col-sm-3 productCard">
-		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accesories/DittyBagTropical.jpeg" alt="featured item 1">
+		<div class="col-sm-3 productCard" id="featuredOne" onclick="showModal(0)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/DittyBagTropical.jpeg" alt="featured item 1">
 		<div class="itemDescription">
-			<h5> Ditty Bag Tropical</h5>
+			<h5 id="productName"> Ditty Bag Tropical</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+			<p id="productPrice"> $20</p>
+			<button id="buyNowbtn" style="margin-top:22px"> Buy Now </button>
+		</div>	
+	</div>
+<div class="itemBorder"></div>
+	<div class="col-sm-3 productCard" id="featuredTwo" onclick="showModal(1)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/ConvertibleMiniFlapPackOak.jpg" alt="featured item 2" >
+			<div class="itemDescription">
+				<h5>Convertible Mini Flap Pack Oak</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $50</P>
+				<button id="buyNowbtn"> Buy Now </button>
+
+			</div>
+		</div>
+<div class="itemBorder"></div>
+	<div class="col-sm-3 productCard" id="featureThree" onclick="showModal(2)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/OvershoulderBags/EspritPocketLeather.jpg" alt="featured item 3">
+			<div class="itemDescription">
+				<h5>Convertible Mini Flap Pack Oak</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $50</P>
+				<button id="buyNowbtn"> Buy Now </button>
+
+			</div>
+		</div>
+	</div>
+<div class="itemBottomBorder"> </div>
+	<div class="row">
+		<div class="col-sm-3 productCard" id="featureFour" onclick="showModal(3)">
+			<div class="seeMoreProduct">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/Hand-stitchedLeatherCardWallet.jpg" alt="featured item 4">
+	</div>
+		<div class="itemDescription">
+			<h5> Hand-Stitched Leather Card Wallet</h5>
 			<div class="rating">
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
@@ -78,57 +152,8 @@
 		</div>	
 	</div>
 <div class="itemBorder"></div>
-	<div class="col-sm-3 productCard">
-		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/ConvertibleMiniFlapPackOak.jpg" alt="featured item 2" >
-			<div class="itemDescription">
-				<h5>Convertible Mini Flap Pack Oak</h5>
-			<div class="rating">
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-			</div>
-				<P> $50</P>
-			</div>
-		</div>
-<div class="itemBorder"></div>
-	<div class="col-sm-3 productCard">
-		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/OvershoulderBags/EspritPocketLeather.jpg" alt="featured item 3">
-			<div class="itemDescription">
-				<h5>Convertible Mini Flap Pack Oak</h5>
-			<div class="rating">
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-			</div>
-				<P> $50</P>
-			</div>
-		</div>
-	</div>
-<div class="itemBottomBorder"> </div>
-	<div class="row">
-		<div class="col-sm-3 productCard">
-			<div class="seeMoreProduct">
-		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accesories/Hand-stitchedLeatherCardWallet.jpg" alt="featured item 4">
-	</div>
-		<div class="itemDescription">
-			<h5> Hand-Stitched Leather Card Wallet</h5>
-			<div class="rating">
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star checked"></span>
-				<span class="fa fa-star"></span>
-				<span class="fa fa-star"></span>
-			</div>
-			<p> $20</p>
-		</div>	
-	</div>
-<div class="itemBorder"></div>
 
-	<div class="col-sm-3 productCard">
+	<div class="col-sm-3 productCard" id="featureFive" onclick="showModal(4)">
 		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/RoulezPackCharcoalwRichBrownLeather.jpg" alt="featured item 5" >
 			<div class="itemDescription">
 				<h5>Roulez Pack Charcoal Rich Brown Leather</h5>
@@ -140,10 +165,11 @@
 				<span class="fa fa-star"></span>
 			</div>
 				<P> $300</P>
+				<button id="buyNowbtn"> Buy Now </button>
 			</div>
 		</div>
 <div class="itemBorder"></div>
-		<div class="col-sm-3 productCard">
+		<div class="col-sm-3 productCard" id="featureSix" onclick="showModal(5)">
 		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/OvershoulderBags/EspritPocketNutria.jpg" alt="featured item 6">
 			<div class="itemDescription">
 				<h5>Convertible Mini Flap Pack Oak</h5>
@@ -155,14 +181,16 @@
 				<span class="fa fa-star"></span>
 			</div>
 				<P> $50</P>
+				<button id="buyNowbtn"> Buy Now </button>
 			</div>
 		</div>
 	</div>
 	</div>
 </div>
-<h4 style="text-align:center; font-family: 'IBM Plex Mono', monospace;font-weight:bold;">SUPPORTING LOCAL COMMUNITY</h4>
+<div class="standOut">
+<h4 style="text-align:center; font-family: 'IBM Plex Mono', monospace;font-weight:bold; margin-bottom: 40px;">SUPPORTING LOCAL COMMUNITY</h4>
 <br>
-	<div class="row">
+	<div class="row" style="width: 1440px">
 		<div class=" col-sm-6 localMat">
 			<h5 style="font-weight:bold;text-align:center;"> Our Materials</h5>
 			<p>Our materials are sourced as close to New Orleans as possible, and entirely within the U.S. (see“Our Materials” for more info). We take pride in tapping into unique Louisiana resources such as hand-woven fabrics, alligator leathers, repurposed rice bags, nutria fur, and custom metal manufacturing. Most of these materials come from small or family-run businesses and we’re happy to support our local network through these purchases.</p>
@@ -172,12 +200,13 @@
 			<p>Our passion for our community is also why we rely entirely on local creative talent for our web design, marketing, and photography. Our core team currently consists of 5 New Orleans residents. As our business grows, we are committed, in turn, to creating even more local job opportunities.</p>
 		</div>
 	</div>
+</div>
 
 
 </body>
 <div class="footer">
 	<div class="row"style="padding-top:0px; padding-bottom:5px;">
-		<div class="section1">
+		<div class="section1" style="padding-right:60px">
 		<div class="contactSection">
 			<h6> hello@tchoupindustries.com
 		</div>
@@ -201,21 +230,35 @@
 </h6>
 </div>
 </div>
-<div class="mapSection">
-	<div id="map" style="width:50%;height:350px;"></div>
-</div>
+	<div id="map"></div>
+	   <script>
+      
+      function initMap() {
+      	var uluru = {lat: 29.932, lng: -90.0739};
+      	var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: uluru});
+      	var marker = new google.maps.Marker({position: uluru, map:map});
+      }
+    </script>
 <div class="signUp">
 	<h6> Sign up for our Newsletter for the hottest deals of the summer</h6>
 	<form>
 		First Name:<br>
-		<input type="text" name="firstname"><br>
+		<input id="fillBox" type="text" name="firstname"><br>
 		Last Name:<br>
-		<input type="text" name="lastname"><br>
+		<input id="fillBox" type="text" name="lastname"><br>
 		Email:<br>
-		<input type="text" name="email"><br>
-		<button style="margin-top: 10px; margin-left:70px;"> Submit </button>
+		<input id="fillBox" type="text" name="email"><br>
 	</form>
+		<button id="newsletter" onclick="newsletter()" style="margin-top: 10px; margin-left:70px;"> Submit </button>
+	
 </div>
 </div>
+
+<div id="productModal" class="modal">
+	</div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArdhPU3dBGliNyM5tzOEP13H6PrOAaYUU&callback=initMap"
+    async defer></script>
 
 </html>

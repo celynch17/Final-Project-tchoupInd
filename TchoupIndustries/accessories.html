@@ -1,0 +1,214 @@
+<html>
+<head>
+	<link rel= "stylesheet" href="tchoupCSS.css">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	 <link rel="about_page" href="about.html">
+	 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="accessories.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Accessories</title>
+	<div class="row" style="padding-left:20px; padding-right:0px; padding-bottom: 10px; padding-top:20px;    background: #fffff0; width:1450px; border-bottom: solid black 3px">
+  <div>
+  <span class="material-icons" id="menuBar" style="color:black; font-size: 60px; margin:0px">&#xe5d2;</span>
+</div>
+  <div class="logo">
+    <img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/tchoup-logo.png" alt="tchoup logo" style="width:150px; height:120px;">
+  </div>
+</div>
+</head>
+<body>
+	 <div id="navSideBar">
+    <span class="material-icons" id="hideMenu" style="color:black; font-size: 48px; margin:5px; float:middle"> &#xe5c4;</span>
+    <ul style=" list-style-type: none; font-size: 24px;">
+      <a href="tchouphome.html">Home</a>
+      <br>
+      <a href="aboutus.html"> About Us</a>
+      <br>
+      <a href="backpacks.html">Backpacks</a>
+      <br>
+      <a href="accessories.html"> Accessories</a>
+      <br>
+      <a href="shoulderbags.html">Over the Shoulder</a>
+      <br>
+      <a href="contact.html"> Contact</a>
+    </ul>
+  </div>
+  <div class="featuredProducts" style="padding-bottom: 10px;">
+	<div class="productTitle" style="background: url(https://scontent.cdninstagram.com/vp/998816e5341f4a6032985d85290c6a59/5BFD038F/t51.2885-15/sh0.08/e35/s640x640/38009099_2026819037349077_8738273871821537280_n.jpg); height: 400px; background-repeat:no-repeat; background-position: center">
+		<h2 style="margin-top: 175px;text-align:center"> ACCESSORIES </h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 accessoryCard" id="accessoryOne" onclick="showModal(0)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/CanvasFoldingWallet.jpg" alt="featured item 1">
+		<div class="accessoryDescription">
+			<h5> Canvas Folding Wallet </h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+			<p id="productPrice"> $40 </p>
+			<button id="buyNowbtn" style="margin-top:22px"> Buy Now </button>
+		</div>	
+	</div>
+<div class="itemBorder"></div>
+	<div class="col-sm-3 accessoryCard" id="accessoryTwo" onclick="showModal(1)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/DittyBagTropical.jpeg" alt="featured item 2" >
+			<div class="backpackDescription">
+				<h5>Ditty Bag Tropical</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $60</P>
+				<button id="buyNowbtn"> Buy Now </button>
+
+			</div>
+		</div>
+<div class="itemBorder"></div>
+	<div class="col-sm-3 accessoryCard" id="accessoryThree" onclick="showModal(2)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/FannyPackBlackwLeatherPanel.jpg" alt="featured item 3">
+			<div class="accessoryDescription">
+				<h5>Fanny Pack Black w/ Leather Panel</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $60</P>
+				<button id="buyNowbtn"> Buy Now </button>
+
+			</div>
+		</div>
+	</div>
+<div class="itemBottomBorder"> </div>
+	<div class="row">
+		<div class="col-sm-3 accessoryCard" id="accessoryFour" onclick="showModal(3)">
+			<div class="seeMoreProduct">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/FannyPackTropical.jpg" alt="featured item 4">
+	</div>
+		<div class="accessoryDescription">
+			<h5> Fanny Pack Tropical</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+			<p> $80</p>
+			<button id="buyNowbtn"> Buy Now </button>
+		</div>	
+	</div>
+<div class="itemBorder"></div>
+
+	<div class="col-sm-3 accessoryCard" id="accessoryFive" onclick="showModal(4)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/Hand-stitchedLeatherCardWallet.jpg" alt="featured item 5" >
+			<div class="accessoryDescription">
+				<h5>Hand-Stitched LEather Card Wallet </h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $45</P>
+				<button id="buyNowbtn"> Buy Now </button>
+			</div>
+		</div>
+<div class="itemBorder"></div>
+		<div class="col-sm-3 accessoryCard" id="accessorySix" onclick="showModal(5)">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/TravelDogBowl.jpg" alt="featured item 6">
+			<div class="accessoryDescription">
+				<h5>Travel Dog Bowl</h5>
+			<div class="rating">
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			</div>
+				<P> $30</P>
+				<button id="buyNowbtn"> Buy Now </button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<div class="missionStatement" style="padding-left: 10px; padding-right:10px; ">
+	<h4> Warranty</h4>
+	<p> We guarantee our bags! Our Lifetime Warranty covers repairs to manufacturing defects (materials, workmanship and/or design) applicable to the lifetime of our bags for up to 4 years.  If damage is not covered under our warranty (due to normal wear and tear, abuse, accident, critters, or natural breakdown of materials over extended use and time), we will repair it if possible for a reasonable fee.   </p>
+
+	<p>If you have an item that needs repair we suggest the following steps. First, send us a note describing the damage to hello@tchoupindustries.com , include photos if you can! Second, we'll let you know if this item can be repaired under warranty or we'll quote you a repair fee. Third, ship your bag to use at the following address. We recommend using a shipping carrier that provides tracking information.</p>
+</div>
+</body>
+<div class="footer">
+	<div class="row"style="padding-top:0px; padding-bottom:5px;">
+		<div class="section1" style="padding-right:60px">
+		<div class="contactSection">
+			<h6> hello@tchoupindustries.com
+		</div>
+	
+		<div class="socialMedia">
+				<i href="https://www.facebook.com/tchoupbags/" class="fa fa-facebook-official" style="font-size:60px"></i>
+				<i class="fa fa-twitter-square" style="font-size:60px"></i>
+				<br>
+				<i class="fa fa-instagram" style="font-size:60px"></i>
+				<i class="fa fa-pinterest-square" style="font-size:60px"></i>
+		</div>
+		<br>
+		<div class="locationInfo">
+			<h6> 1115 Saint Mary Street
+<br>				New Orleans, LA 70130
+<br>
+<br>			Monday - Saturday 11am-6pm
+<br>			Sunday 12pm-5pm
+<br>			Closed Wednesdays
+<br>			Phone: (504)-872-0726
+</h6>
+</div>
+</div>
+	<div id="map"></div>
+	   <script>
+      
+      function initMap() {
+      	var uluru = {lat: 29.932, lng: -90.0739};
+      	var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: uluru});
+      	var marker = new google.maps.Marker({position: uluru, map:map});
+      }
+    </script>
+<div class="signUp">
+	<h6> Sign up for our Newsletter for the hottest deals of the summer</h6>
+	<form>
+		First Name:<br>
+		<input id="fillBox" type="text" name="firstname"><br>
+		Last Name:<br>
+		<input id="fillBox" type="text" name="lastname"><br>
+		Email:<br>
+		<input id="fillBox" type="text" name="email"><br>
+	</form>
+		<button id="newsletter" onclick="newsletter()" style="margin-top: 10px; margin-left:70px;"> Submit </button>
+	
+</div>
+</div>
+
+<div id="productModal" class="modal">
+	</div>
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArdhPU3dBGliNyM5tzOEP13H6PrOAaYUU&callback=initMap"
+    async defer></script>
+</html>
