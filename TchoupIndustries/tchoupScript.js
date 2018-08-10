@@ -5,7 +5,6 @@ $(document).ready(function(){
  //  productModal()
 });
 
-
 function productModal(){
 	var modal = document.getElementById('productModal');
 	var btn = document.getElementById('featureModal');
@@ -14,8 +13,10 @@ function productModal(){
 
 function navBar(){
 	var open = document.getElementById('menuBar');
-	var menu = document.getElementById('navSideBar')
+	var menu = document.getElementById('navSideBar');
 	var close = document.getElementById('hideMenu');
+
+	
 
 	close.onclick = function(){
 		menu.style.display = "none";
@@ -23,6 +24,7 @@ function navBar(){
 	open.onclick = function(){
 		menu.style.display="block";
 	}
+	
 };
 
 function showModal(arg){

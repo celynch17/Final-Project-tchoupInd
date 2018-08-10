@@ -1,14 +1,21 @@
-x.featuredHeader{
-    background:  #fffff0;
+.featuredHeader{
+    background:  #fffff7;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
 }
+
 .featuredSlides{
     margin-left:160px;
     padding-top: 50px;
 }
-.featureSlides{
-    padding-top: 0px;
+
+.carousel-item{
+    margin-top: 10px;
+    background:  #fffff7;
+    margin-bottom: 10px;
+}
+body{
+    background:black;
 }
 .arrows{
     margin-top: 140px;
@@ -24,7 +31,7 @@ x.featuredHeader{
 }
 
 .standOut{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     text-align: center;
     background: #fffff0;
@@ -39,6 +46,7 @@ body{
 img{
     width:300px;
     height:300px;
+    border:inset lightgrey 1px;
 }
 img:hover{
     opacity:.5;
@@ -97,15 +105,22 @@ img:hover{
 
 #navSideBar{
     width:300px;
-    background-color: #fffffc;
+    background-color: #fffff7;
     display:none;
     height: 100%;
     position:fixed;
     top:0;
     overflow-x: hidden;
-    transition: .5s;
     z-index: 1;
+    border-right:solid grey 2px;
+    font-family: 'IBM Plex Mono', monospace;
 
+}
+#navSideBar a:hover{
+    font-size: 25px;
+}
+#navSideBar a{
+    margin-top: 100px;
 }
 
 .footer{
@@ -121,8 +136,8 @@ img:hover{
 }
 .logo{
     text-align: center;
-    width: 1330px;
-    padding-right:20px;
+    width: 1370px;
+    padding-right:0px;
 }
 .signUp{
     width:350px;
@@ -130,7 +145,12 @@ img:hover{
     float:right;
 }
 
-
+.socialMedia a{
+    color:#F5F5F5;
+}
+.socialMedia a:hover{
+    color:lightgrey;
+}
 #productModal{
     margin: 300px;
     margin-top: 50px;
@@ -152,21 +172,24 @@ img:hover{
     display: inline-block;
 }
 
+span{
+    cursor:pointer;
+}
 
 
 /*About Us*/
 .accordion {
     background-color: #c6d9ec;
     color:  #47476b;
-    cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: center;
     border: none;
     outline: none;
     text-transform: .4s;
-    margin-bottom:15px;
-    margin-left: -15px
+    margin-bottom:50px;
+    margin-left: -15px;
+
 }
 #ourName{
     text-align: center;
@@ -255,3 +278,43 @@ img:hover{
     font-family: 'IBM Plex Mono', monospace;
     background: #fffffc;
 }
+
+
+/*Checkout Page*/
+
+.checkOutCart{
+    font-family: 'IBM Plex Mono', monospace;
+    width: 300px;
+    border: solid lightgrey 1px;
+    padding:2px;
+    float:right;
+    margin-right:50px;
+    background:white;
+    margin-top: 50px;
+}
+
+#cart{
+    float:right;
+}
+
+.checkOutForm{
+    border: solid lightgrey 1px;
+    width:1000px;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    background:white;
+}
+a.hover{
+    color:grey;
+}
+input{
+    margin-right: 15px;
+    width: 300px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+form{
+    margin-top: 20px;
+    margin-left:10px;
+}
+

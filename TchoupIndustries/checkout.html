@@ -1,0 +1,225 @@
+<html>
+<head>
+	<link rel= "stylesheet" href="tchoupCSS.css">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	 <link rel="about_page" href="about.html">
+	 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="tchoupScript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Check Out</title>
+	<div class="row" style="padding-left:20px; padding-right:0px; padding-bottom: 10px; padding-top:20px;    background: #fffff0; width:1450px; border-bottom: solid black 3px">
+<div>
+	<span class="material-icons" id="menuBar" style="color:black; font-size: 60px; margin:0px">&#xe5d2;</span>
+</div>
+	<div class="logo">
+		<img src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/tchoup-logo.png" alt="tchoup logo" style="width:150px; height:120px;text-align:center">
+		<span class="material-icons" id="cart" style="color:black; font-size: 60px; padding-right:0px;text-align:right" onClick="location.href='checkout.html'">&#xe8cc;</span>
+	</div>
+</div>
+</head>
+<div id="navSideBar">
+		<span class="material-icons" id="hideMenu" style="color:black; font-size: 48px; margin:5px; float:middle"> &#xe5c4;</span>
+		<ul style=" list-style-type: none; font-size: 24px;">
+			<a href="tchouphome.html" style="color:black; text-decoration:none;">Home</a>
+			<br>
+			<a href="aboutus.html" style="color:black; text-decoration:none"> About Us</a>
+			<br>
+			<a href="backpacks.html" style="color:black; text-decoration:none">Backpacks</a>
+			<br>
+			<a href="accessories.html" style="color:black; text-decoration:none"> Accessories</a>
+			<br>
+			<a href="shoulderbags.html" style="color:black; text-decoration:none">Over the Shoulder</a>
+			<br>
+		</ul>
+	</div>
+<body>
+	<div class="checkOutCart">
+		<div id="checkOut1">
+			<img class="img-fluid" src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/FlapPackRecycledSailcloth.jpg" style="width:100px; height:100px;margin-left:0px">
+			<h5 style="float:right; margin-top: 40px; "> $300.00 </h5>
+			<p style="width: 115px"> Flap Pack Recycled Sail Cloth</p>
+	</div>
+
+	<div id="checkOut2" style="border-bottom: solid lightgrey 1px; margin-bottom: 5px">
+				<img class="img-fluid" src="/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Accessories/TchoupLogoTee.jpg" style="width:100px; height:100px">
+				<h5 style="float:right; margin-top: 40px"> $30.00 </h5>
+				<p style="width: 115px"> Tchoup Logo T-Shirt</p>
+	</div>
+			<div class="totalItems">
+				<h6> Items:2 </h6>
+				<h6> Total: </h6>
+			</div>
+			<div class="totalPrice" style="float:right">
+				<h4> $330.00</h4>
+			</div>
+		
+</div>
+<h2 style="text-align:center;font-family: 'IBM Plex Mono', monospace;
+    margin-bottom:50px;margin-top:35px;text-decoration:underline;padding-left:300px;"> Check Out</h2>
+<div class="checkOutForm">
+	<h4 style="margin-top: 20px;margin-left:10px;">Shipping Info:</h4>
+	<form>
+	<div class="row">
+		<input id="firstName" placeholder="First Name" style="margin-right:15px"></input>
+		<input id="LastName" placeholder="Last Name"></input>
+	</div>
+	<div class="row" style="margin-top: 25px">
+		<input id="address1" placeholder="Address 1"></input>
+	</div>
+	<div class="row" style="margin-top: 25px">
+		<input id="address2" placeholder="Address 2"></input>
+	</div>
+	
+	<div class="row" style="margin-top: 25px">
+		<input id="city" placeholder="City" style="margin-right:15px"></input>
+		<input id="state" placeholder="State" style="margin-right:15px"></input>
+		<input id="zipcode" placeholder="Zip Code"maxlength="5"style="width: 200px"></input>
+	</div>
+	<div class="row" style="margin-top: 25px">
+		<input id="phone" placeholder="Phone #" maxlength="10"></input>
+	</div>
+</form>
+	<div class="shippingSelect">
+		<h4 style="margin-top: 40px;margin-left:10px;"> Select Shipping Option: </h4>
+	<div class="row">
+		<select>
+			<option value="0">Select Shipping:</option>
+			<option value="1">Standard Shipping - $10.50</option>
+			<option value="2">Priority Shipping - $24.50</option>
+		</select>
+	</div>
+</div>
+
+	<h4 style="margin-top: 40px;margin-left:10px;"> Credit Card Info:</h4>
+	
+	<form>
+		
+		Card Number: <br>
+		<div class="row">
+		<input id="ccNumb" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16" style="margin-right:15px"></input>
+		<input id="cardName" placeholder="Name on the Card"></input>
+	</div>
+		Expiration Date: <br>
+		<div class="row">
+		<select style="margin-right:15px">
+			<option value="0">01</option>
+			<option value="1">02</option>
+			<option value="2">03</option>
+			<option value="3">04</option>
+			<option value="4">05</option>
+			<option value="5">06</option>
+			<option value="6">07</option>
+			<option value="7">08</option>
+			<option value="8">09</option>
+			<option value="9">10</option>
+			<option value="10">11</option>
+			<option value="11">12</option>
+		</select>
+		<select style="margin-right:15px">
+			<option value="0">2018</option>
+			<option value="1">2019</option>
+			<option value="2">2020</option>
+			<option value="3">2021</option>
+			<option value="4">2022</option>
+			<option value="5">2023</option>
+			<option value="6">2024</option>
+			<option value="7">2025</option>
+		</select>
+		<input id="CSV" placeholder="XXXX"maxlength="4" ></input>
+	</div>
+<button type="button" style="margin-top:25px;margin-left:400px" onclick="thankYouAlert()">Complete Your Order!</button>
+</form>
+</div>
+<div class="standOut">
+<h4 style="text-align:center; font-family: 'IBM Plex Mono', monospace;font-weight:bold; margin-bottom: 40px;">Returns and Exchange Policy</h4>
+<br>
+	<div class="row" style="width: 1440px">
+		<div class=" col-sm-6 localMat">
+			<h5 style="font-weight:bold;text-align:center;">Exchanges</h5>
+			<p>To make an exchange, return your order using the address above and ATTN: Exchange. Simply place a new order on our website. Any applicable refunds for returns will not be processed until product is received at Tchoup Industries and will be processed in the original form of payment. Please allow between 5-7 business days to see your refund. Your new order will be processed when we receive the order.</p>
+		</div>
+		<div class="col-sm-6 localTal">
+			<h5 style="font-weight:bold;text-align:center;">Returns</h5>
+			<p>It is your responsibility to pay for return shipping charges. We suggest using a shipment method with a tracking number. We are not responsible for items sent back without a tracking number. If your item is defective or you were sent the incorrect item, we will reimburse you for reasonable shipping charges. Please package your return inside a box. If it is returned to us damaged, we will not be able to reimburse you for the item. Any items sent back in used or unsellable condition will be sent back to the customer with no refund issued.</p>
+		</div>
+	</div>
+</div>
+<script>
+function thankYouAlert(){
+	alert("Thank you for your purchase! Check your email for your confirmation and shipping updates!")
+}
+</script>
+<style>
+body{
+	    background: #fffff0;
+
+}
+</style>
+
+
+
+
+</body>
+<div class="footer">
+	<div class="row"style="padding-top:0px; padding-bottom:5px;">
+		<div class="section1" style="padding-right:60px">
+		<div class="contactSection">
+			<h6> hello@tchoupindustries.com </h6>
+		</div>
+	
+		<div class="socialMedia">
+				<a href="https://www.facebook.com/tchoupbags/" class="fa fa-facebook-official" style="font-size:60px"></a>
+				<a href="https://twitter.com/tchoupbags" class="fa fa-twitter-square" style="font-size:60px"></a>
+				<br>
+				<a href="https://www.instagram.com/tchoupbags/" class="fa fa-instagram" style="font-size:60px"></a>
+				<a href="https://www.pinterest.com/tchoupbags/" class="fa fa-pinterest-square" style="font-size:60px"></a>
+		</div>
+		<br>
+		<div class="locationInfo">
+			<h6> 1115 Saint Mary Street
+<br>				New Orleans, LA 70130
+<br>
+<br>			Monday - Saturday 11am-6pm
+<br>			Sunday 12pm-5pm
+<br>			Closed Wednesdays
+<br>			Phone: (504)-872-0726
+</h6>
+</div>
+</div>
+	<div id="map"></div>
+	   <script>
+      
+      function initMap() {
+      	var uluru = {lat: 29.932, lng: -90.0739};
+      	var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: uluru});
+      	var marker = new google.maps.Marker({position: uluru, map:map});
+      }
+    </script>
+<div class="signUp">
+	<h6> Sign up for our Newsletter for the hottest deals of the summer</h6>
+	<form>
+		First Name:<br>
+		<input id="fillBox" type="text" name="firstname"><br>
+		Last Name:<br>
+		<input id="fillBox" type="text" name="lastname"><br>
+		Email:<br>
+		<input id="fillBox" type="text" name="email"><br>
+	</form>
+		<button id="newsletter" onclick="newsletter()" style="margin-top: 10px; margin-left:70px;"> Submit </button>
+	
+</div>
+</div>
+
+<div id="productModal" class="modal">
+	</div>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArdhPU3dBGliNyM5tzOEP13H6PrOAaYUU&callback=initMap"
+    async defer></script>
+</html>

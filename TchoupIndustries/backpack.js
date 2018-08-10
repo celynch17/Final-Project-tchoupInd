@@ -70,8 +70,8 @@ function showModal(arg){
 		"price" : "$300",
 		"img": "/Users/christianlynch/Desktop/CodeCert/TchoupIndustries/Images/Backpacks/RoulezPackCharcoalwRichBrownLeather.jpg",
 		"description": "Charcoal Canvas w/ Rich Brown Cowhide Leather",
-		"itemFeature" : "Water Repellent Waxed Cotton Canvas Body Fabric, Double Padded Shoulder Strap and Back Panel for Comfort, Double Layer Bottom Panel for Durability, Heavy Duty Nylon Thread Construction, Secure Roll Top & Hook Closure with Built in Bottle Opener, Front Metal Zip Pocket for Small, Easy Access Items, Interior iPad Pocket Made from Repurposed Rice Bags, Interior Hand-Loomed Key Loop",
-		"materials" : "Recycled Sailcloth Body Fabric, Double Padded Shoulder Strap and Back Panel for Comfort, Double Layer Waxed Canvas Bottom Panel for Durability, Heavy Duty Nylon Thread Construction, Secure Flap & Hook Closure with Built in Bottle Opener, Two Huge Front Pockets Protected by Flap Closure, Interior iPad Pocket & Key Loop"
+		"itemFeature" : "Water Repellent Waxed Cotton Canvas Body Fabric, Double Layer Bottom Panel for Durability, Heavy Duty Nylon Thread Construction, Secure Roll Top & Hook Closure with Built in Bottle Opener, Front Metal Zip Pocket for Small, Easy Access Items, Interior iPad Pocket Made from Repurposed Rice Bags, Interior Hand-Loomed Key Loop",
+		"materials" : "Recycled Sailcloth Body Fabric, Secure Flap & Hook Closure with Built in Bottle Opener, Two Huge Front Pockets Protected by Flap Closure, Interior iPad Pocket & Key Loop"
 	},
 	{
 		"title": "Flap Pack Recycled Sail Cloth",
